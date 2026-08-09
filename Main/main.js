@@ -10,6 +10,13 @@ function calculateVat_30Per(price) {
     return total;
 }
 
+function calculateVat_10Per(price) {
+    let vat = price * 0.1;
+    let total = price + vat;
+    return total;
+}
+
+
 let productPrice = 500;
 let netTotal = calculateVat(productPrice);
 
